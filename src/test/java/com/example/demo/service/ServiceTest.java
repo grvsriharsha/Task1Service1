@@ -37,11 +37,11 @@ public class ServiceTest {
 
         ResponseDTO res2 = new ResponseDTO();
         res2.setResponse("Hello");
-        ResponseEntity responseEntity2 = new ResponseEntity(res2, HttpStatus.SERVICE_UNAVAILABLE);
+        ResponseEntity responseEntity2 = new ResponseEntity(res2, HttpStatus.OK);
 
         ResponseDTO res3 = new ResponseDTO();
         res3.setResponse("sri harsha");
-        ResponseEntity responseEntity3 = new ResponseEntity(res3, HttpStatus.SERVICE_UNAVAILABLE);
+        ResponseEntity responseEntity3 = new ResponseEntity(res3, HttpStatus.OK);
 
 
         given(restTemplate.exchange(
@@ -69,7 +69,7 @@ public class ServiceTest {
 
         ResponseDTO res2 = new ResponseDTO();
         res2.setResponse("Hello");
-        ResponseEntity responseEntity2 = new ResponseEntity(res2, HttpStatus.SERVICE_UNAVAILABLE);
+        ResponseEntity responseEntity2 = new ResponseEntity(res2, HttpStatus.OK);
 
         ResponseDTO res3 = new ResponseDTO();
         res3.setResponse("sri harsha");
